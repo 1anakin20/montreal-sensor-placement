@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensor Navigation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            padding: 40px;
+        }
+
+        h1 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .button-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 400px;
+        }
+
+        .nav-button {
+            padding: 20px 40px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: white;
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 2px solid white;
+            border-radius: 12px;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-button:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .nav-button:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sensor Dashboard</h1>
+        <div class="button-grid">
+            <a href="all_sensors.html" target="_blank" class="nav-button">All Sensors</a>
+            <a href="highway_only.html" target="_blank" class="nav-button">Highway Only</a>
+            <a href="arterial_only.html" target="_blank" class="nav-button">Arterial Only</a>
+            <a href="residential_only.html" target="_blank" class="nav-button">Residential Only</a>
+        </div>
+    </div>
+</body>
+</html>
